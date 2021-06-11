@@ -384,14 +384,14 @@ function run() {
     var body = yield generateEmailContents(repo, numOverThreshold, numSamples, toxicityScoresIssues, toxicityScoresComments, newPosters, allUsers);
 
     console.log("\nABOUT TO SEND MAIL....");
-    sgMail.setApiKey(sendgrid_key);
-    const msg = {
-      to: 'paviusa23@gmail.com',
-      from: 'hci.demo.pavi@gmail.com',
-      subject: 'Project Report',
-      text: 'and easy to do anywhere, even with Node.js',
-      html: body,
-    };
+//     sgMail.setApiKey(sendgrid_key);
+//     const msg = {
+//       to: 'paviusa23@gmail.com',
+//       from: 'hci.demo.pavi@gmail.com',
+//       subject: 'Project Report',
+//       text: 'and easy to do anywhere, even with Node.js',
+//       html: body,
+//     };
 
     // sgMail
     // .send(msg)
